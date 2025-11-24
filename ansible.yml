@@ -1,6 +1,8 @@
 ---
 - hosts: node
   become: true
+  environment:
+    KUBECONFIG: /home/ubuntu/.kube/config
   tasks:
     - name: Create new deployment
       command: kubectl apply -f /home/ubuntu/Deployment.yml
