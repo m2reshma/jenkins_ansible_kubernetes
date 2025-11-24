@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: reshma8466004811/pipeline-demo:latest
+        image: reshma8466004811/pipeline-demo:v1.latest
         ports:
         - containerPort: 80
